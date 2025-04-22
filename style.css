@@ -1,0 +1,115 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background: #f0f0f0;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: flex;
+    align-items: center; /* Menjajarkan gambar dan teks secara vertikal */
+    justify-content: start; /* Memastikan elemen berada di awal (kiri) */
+    text-align: left;
+    padding: 10px 20px;
+    gap: 15px; /* Menambahkan jarak antara gambar dan teks */
+}
+
+#header img {
+    width: 130px;
+    height: auto;
+    display: block;
+}
+
+#header p {
+    font-size: 40px;
+    margin: 0;
+}
+
+#section img {
+    display: block;
+    width: 50px;
+    margin: auto;
+}
+
+/* Navigasi */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background: #dcdcdc;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+ul li a:hover,
+.current a {
+    color: white;
+    transform: scale(1.1);
+    background: #5d5d5d;
+}
+
+/* Konten */
+.text {
+    padding: 10px;
+}
+
+h2, h3 {
+    font-weight: 600;
+}
+
+.anjay {
+    display: block;
+    width: 1000px;
+    margin: auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.icon {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon a:hover {
+    transform: scale(1.2);
+}
+
+.icon img {
+    filter: grayscale(100%) brightness(0);
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background: #dcdcdc;
+}

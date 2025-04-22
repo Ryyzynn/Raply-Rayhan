@@ -1,0 +1,159 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background: #f0f0f0;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: flex;
+    align-items: center; /* Menjajarkan gambar dan teks secara vertikal */
+    justify-content: start; /* Memastikan elemen berada di awal (kiri) */
+    text-align: left;
+    padding: 10px 20px;
+    gap: 15px; /* Menambahkan jarak antara gambar dan teks */
+}
+
+#header img {
+    width: 130px;
+    height: auto;
+    display: block;
+}
+
+#header p {
+    font-size: 16px;
+    margin: 0;
+}
+
+#section img {
+    display: block;
+    width: 50px;
+    margin: auto;
+}
+
+/* Navigasi */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background: #dcdcdc;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+ul li a:hover,
+.current a {
+    color: white;
+    transform: scale(1.1);
+    background: #5d5d5d;
+}
+
+/* Konten */
+#content {
+    padding: 10px;
+}
+
+h2 {
+    font-weight: 600;
+    text-shadow: 2px 2px 10px rgba(50, 50, 50, 0.3);
+}
+
+.struktur-kelas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.level,
+.level1,
+.level2,
+.level3,
+.level4,
+.level5,
+.level6,
+.level7,
+.level8,
+.level9,
+.level10 {
+    display: flex;
+    justify-content: center;
+    gap: 0px;  
+}
+
+.card {
+    margin: -50px;
+    margin-top: 20px;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    width: 280px;
+    text-align: center;
+    box-shadow: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 120px;
+    height: 160px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(150, 150, 150, 0.5);
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.icon {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon a:hover {
+    transform: scale(1.2);
+}
+
+.icon img {
+    filter: grayscale(100%) brightness(0);
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background: #dcdcdc;
+}
